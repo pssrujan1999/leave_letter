@@ -26,11 +26,11 @@ def generate_pdf(name, designation, school, from_date, to_date, reason):
     
     # Subject and Content
     pdf.set_font("Arial", "B", 12)
-    pdf.cell(200, 10, "Subject: Leave Application", ln=True)
+    pdf.cell(200, 10, "Subject: Application for leave", ln=True)
     pdf.ln(10)
     
     pdf.set_font("Arial", "", 12)
-    pdf.multi_cell(0, 10, f"Respected Sir,\nI am writing to request leave from {from_date} to {to_date} due to {reason}. I kindly request you to grant me leave for these days, and I assure you to resume my duties promptly after my absence.\n\nThank you for considering my request.")
+    pdf.multi_cell(0, 10, f"Respected Sir,\nI am writing to request leave from {from_date} to {to_date} due to {reason}. Kindly grant me leave for the above mentioned period.\n\nThank you for the consideration.")
 
     pdf.set_font("Arial", "", 12)
     pdf.cell(200, 10, f"Yours faithfully, ", ln=True)
