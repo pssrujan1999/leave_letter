@@ -66,12 +66,12 @@ def generate_pdf(name, designation, school, from_date, to_date, reason, signatur
 # Streamlit UI
 st.title("Leave Application Generator")
 
-name = st.text_input("Name", "ABC")
-designation = st.text_input("Designation", "XYZ")
-school = st.text_input("School", "ABC School")
+name = st.text_input("Name", "D Neerajamma")
+designation = st.text_input("Designation", "SA Telugu")
+school = st.text_input("School", "GHS, Gandhinagar, MBNR")
 from_date = st.date_input("From Date")
 to_date = st.date_input("To Date")
-reason = st.text_area("Reason for Leave", "Specify your reason here")
+reason = st.text_area("Reason for Leave", "")
 
 # Password input for decryption
 encryption_key = st.text_input("Enter Password for Signature File", type="password")
