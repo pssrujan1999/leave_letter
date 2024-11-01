@@ -30,10 +30,10 @@ def generate_pdf(name, designation, school, from_date, to_date, reason):
     pdf.ln(10)
     
     pdf.set_font("Arial", "", 12)
-    pdf.multi_cell(0, 10, f"Respected Sir,\nI am writing to request leave from {from_date} to {to_date} due to {reason}. Kindly grant me leave for the above mentioned period.\n\nThank you for the consideration.")
+    pdf.multi_cell(0, 10, f"Respected Sir,\nI am writing to request leave from {from_date} to {to_date} due to {reason}. Kindly grant me leave for the above mentioned period.\nThank you for the consideration.")
 
     pdf.set_font("Arial", "", 12)
-    pdf.cell(200, 10, f"Yours faithfully, ", ln=True)
+    pdf.cell(200, 10, f"Yours sincerely, ", ln=True)
     pdf.cell(200, 10, f"{name}", ln=True)
     pdf.cell(200, 10, f"{designation}", ln=True)
     pdf.cell(200, 10, f"{school}", ln=True)
